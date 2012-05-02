@@ -38,7 +38,7 @@ http.createServer(function(request, response) {
 			response.write("https://github.com/activitystreams/json-schema</a></p>");
 			response.write ("<ul><li><a href='collection.json'>collection.json</a></li>");
 			response.write ("<li><a href='activity.json'>activity.json</a></li>");
-			response.write ("<li><a href='object.json'>object.json</a></li>");
+			response.write ("<li><a href='base_object.json'>base_object.json</a></li>");
 			response.write ("<li><a href='media_link.json'>media_link.json</a></li>");
 			response.write("</ul>");
 			response.write("</body></html>");

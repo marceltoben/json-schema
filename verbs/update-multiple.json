@@ -12,11 +12,12 @@
     "object" : {
       "type" : "object",
       "title" : "changeset",
+      "javaType" : "io.exstream.feed.modules.activity.entity.BaseObject",
       "properties" : {
         "actions" : {
           "type" : "array",
           "items" : {
-            "type" : "object",
+            "type" : "activity",
             "properties" : {"$ref":"http://activitystrea.ms/json-schema/action.json"}
           }
         }
@@ -24,16 +25,16 @@
     }
   },
   "example" : {
-    "actor" : {"id":1212, "displayName" : "Melissa"}, /*May not be known for FB */
-    "verb" : "update-multiple", /* ignore for FB */
+    "actor" : {"id":1212, "displayName" : "Melissa"},  
+    "verb" : "update-multiple", 
     "time" : "2010-08-02T15:29:00Z",
-    "target" : { /* uid --> id on FB */
+    "target" : { 
       "type" : "profile",
       "id" :  "2121212",
       "displayName" : "Melissa's profile",
       "time" : "2009-08-02T15:29:00Z"
      },
-     "object" : { /* data */
+     "object" : {
        "type" : "changeset",
        "actions" : [
           {"verb" : "update", "object" : {"type" : "property", "displayName" : "relationship status"}},

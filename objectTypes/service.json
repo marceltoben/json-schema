@@ -1,7 +1,7 @@
 {
   "type" : "object",
   "title" : "service",
-  "extends": {"$ref":"http://activitystrea.ms/json-schema/object.json"},
+  "extends": {"$ref":"http://activitystrea.ms/json-schema/base_object.json"},
   "properties" :{
     "objectType" :{
       "type" :"string",

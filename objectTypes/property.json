@@ -2,7 +2,7 @@
   "type" : "object",
   "title" : "property",
   "description" : "A property describes name, path and value. Can be used with delete, update or post verbs",
-  "extends": {"$ref":"http://activitystrea.ms/json-schema/object.json"},
+  "extends": {"$ref":"http://activitystrea.ms/json-schema/base_object.json"},
   "properties" :{
     "objectType" :{
       "type" :"string",
@@ -16,10 +16,6 @@
     "path" : {
       "type" : "string",
       "description" : "dot delimited path to the property in the target. Ex: streetAddress"
-    },
-    "content" : {
-      "type" : "any",
-      "description" : "Value of the property it can be a scalar or an object"
     }
   },
   "example" : {

@@ -1,7 +1,7 @@
 {
   "type" : "object",
   "title" : "list",
-  "extends": {"$ref":"http://activitystrea.ms/json-schema/object.json"},
+  "extends": {"$ref":"http://activitystrea.ms/json-schema/base_object.json"},
   "properties" :{
     "objectType" :{
       "type" :"string",
@@ -11,7 +11,8 @@
       "type" : "array",
       "items" : {
         "type" : "object",
-        "properties" : {"$ref":"http://activitystrea.ms/json-schema/object.json"}
+        "javaType" : "io.exstream.feed.modules.activity.entity.BaseObject",
+        "properties" : {"$ref":"http://activitystrea.ms/json-schema/base_object.json"}
       }
     }
   }

@@ -15,12 +15,13 @@
     },
     "object" : {
       "type" : "object",
-      "properties" : {"$ref":"http://activitystrea.ms/json-schema/objectTypes/property.json"}
+      "properties" : {"$ref":"http://activitystrea.ms/json-schema/objectTypes/property.json"},
+      "javaType" : "io.exstream.feed.modules.activity.entity.BaseObject" 
     },
     "target" : {
       "type" : "object",
       "optional" : true,
-      "properties" : {"$ref":"http://activitystrea.ms/json-schema/core-object.json"}
+      "properties" : {"$ref":"http://activitystrea.ms/json-schema/base_object.json"}
     }
   }
 }
